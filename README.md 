@@ -29,14 +29,19 @@
 python -m venv venv
 source venv/bin/activate  # Для Linux и MacOS
 venv\Scripts\activate     # Для Windows
+```
 
 ### Установка зависимостей
+
 ```bash
 pip install -r requirements.txt
+```
 
 ### Настройка переменных среды
-### Создайте файл .env в корне проекта и добавьте следующие настройки:
 
+Создайте файл `.env` в корне проекта и добавьте следующие настройки:
+
+```
 DB_NAME=имя_базы_данных
 DB_USER=имя_пользователя
 DB_PASSWORD=пароль
@@ -44,15 +49,23 @@ DB_HOST=хост (например, localhost)
 DB_PORT=порт (обычно 5432 для PostgreSQL)
 SECRET_KEY=секретный_ключ_django
 DEBUG=True или False
+```
 
 ### Настройка базы данных
-### Выполните следующие команды для создания таблиц в базе данных:
+
+Выполните следующие команды для создания таблиц в базе данных:
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ### Запуск проекта
+
 ```bash
 python manage.py runserver
+```
 
+## Лицензия
+
+[Укажите тип лицензии или удалите этот раздел, если лицензия не применяется]
